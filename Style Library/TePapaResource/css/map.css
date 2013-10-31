@@ -1,0 +1,345 @@
+body.has-map {
+	overflow: hidden;
+	background: #111111;
+}
+
+.has-map #container {
+	background: #111111;
+}
+
+#interactive-map {
+	position: relative;
+	width: 100%;
+	min-height: 600px;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	display: none;
+}
+
+.has-map #interactive-map {
+	display: block;
+}
+
+#interactive-map header {
+	border-bottom: 1px solid #3c3c3c;
+}
+
+#interactive-map header h4 {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 49px;
+	margin: 0px;
+}
+
+#interactive-map header .icon {
+	background: transparent url(img/sprite.png) no-repeat;
+	cursor: pointer;
+	width: 50px;
+	height: 49px;
+	display: block;
+}
+
+#interactive-map header .icon.minimize {
+	background-position: -580px -83px;
+	float: left;
+}
+
+#interactive-map header .icon.tour-menu,
+#interactive-map header .icon.map-menu {
+	background-position: -280px -83px;
+	float: right;
+	width: 60px;
+}
+
+#interactive-map header .icon.next {
+	background-position: -479px -283px;
+	display: inline-block;
+}
+
+#interactive-map header .icon.previous {
+	background-position: -379px -283px;
+	display: inline-block;
+}
+
+#interactive-map .icon.panel-close {
+	display: none !important;
+	position: absolute;
+	left: -50px;
+	width: 48px;
+	height: 49px;
+	display: block;
+	background: #111111 url(img/sprite.png) -380px -284px;
+	border: 1px solid #3c3c3c;
+	border-width: 0px 1px 1px 1px;
+	z-index: 200;
+}
+
+/* Highlights Tour */
+#interactive-map header .steps {
+	float: right;
+	vertical-align: top;
+}
+
+#interactive-map header #step {
+	line-height: 49px;
+	font-size: 14px;
+	vertical-align: top;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+#interactive-map article {
+	padding: 40px;
+	margin-right: 400px;
+	border-right: 1px solid #3c3c3c;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#interactive-map article h1,
+#interactive-map article h2,
+#interactive-map article p,
+#interactive-map article figure {
+	color: #FFFFFF;
+}
+
+#interactive-map figure {
+	background: transparent;
+	clear: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+#interactive-map figure.left {
+	margin-right: 40px;
+}
+
+#interactive-map #directions-panel {
+	background: #111111;
+	font-size: 13px;
+	line-height: 20px;
+	width: 400px;
+	color: #FFFFFF;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 50px;
+}
+
+#interactive-map #directions-scroll {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#interactive-map #directions-panel h3 {
+	color: #FFFFFF;
+	line-height: 49px;
+	font-size: 16px;
+	padding: 0px 0px 0px 20px;
+	border-bottom: 1px solid #3c3c3c;
+	margin: 0px;
+}
+
+#interactive-map #directions-panel ol {
+	margin: 20px 20px 20px 40px;
+}
+
+#tour-map-container {
+	width: 100%;
+	height: 230px;
+	border-bottom: 1px solid #3c3c3c;
+	background: #111111;
+}
+
+#interactive-map .tour-article {
+	display: none;
+}
+
+#interactive-map .tour-article.active-article {
+	display: block;
+}
+
+#interactive-map #tour-overflow {
+	overflow: auto;
+	position: relative;
+}
+
+#show-directions {
+	display: none;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 830px) {
+	#show-directions {
+		display: block;
+	}
+
+	#interactive-map .icon.panel-close {
+		width: 20px;
+		left: -20px;
+		border-width: 0px 0px 1px 0px;
+		background-position: -395px -283px;
+		display: block !important;
+	}
+
+	#directions-panel {
+		display: none;
+		z-index: 200;
+		width: 100%;
+		border-left: 1px solid #3C3C3C;
+	}
+
+	#interactive-map article {
+		border-right: none;
+		margin-right: 0px;
+		padding: 20px 20px 0 20px;
+		position: relative;
+	}
+}
+
+@media only screen and (min-width : 0px) and (max-width : 568px) {
+
+	.has-map-panel .leaflet-control-zoom {
+		display: none;
+	}
+
+	#directions-panel h3 {
+		display: none;
+	}
+
+	#interactive-map article figcaption {
+		max-width: 100% !important;
+	}
+
+	h1 {
+		padding-right: 30px;
+	}
+	#interactive-map figure.left {
+		margin-right: 0;
+	}
+}
+
+#map-container {
+	width: 100%;
+	min-height: 100px;
+	background: #111111;
+	position: relative;
+}
+
+#info-panels {
+	position: absolute;
+	width: 300px;
+	background: #111111;
+	top: 50px;
+	right: 0px;
+	height: 100%;
+	border-left: 1px solid #3C3C3C;
+	color: #FFFFFF;
+	display: none;
+}
+
+#info-panels .scroll-container {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-touch-action: auto;
+}
+
+#info-panels h2 {
+	color: #FFFFFF;
+	font-size: 16px;
+	letter-spacing: 0;
+	margin: 0 20px 20px 20px;
+	line-height: 20px;
+}
+
+#info-panels h2:first-child {
+	border-bottom: 1px solid #3C3C3C;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 15px 20px 14px 19px;
+}
+
+#info-panels img {
+	border-bottom: 1px solid #3C3C3C;
+	display: block;
+	margin: 0 0 20px 0;
+	max-width: 100%;
+}
+#info-panels h2 + img {
+	margin-top: -20px;
+}
+
+#info-panels p {
+	color: #EEE;
+	margin: 0 20px 20px 20px;
+}
+
+#info-panels .info-panel {
+	display: none;
+	font-size: 13px;
+	line-height: 20px;
+	z-index: 100;
+}
+
+#info-panels .info-panel.panel-active {
+	display: block;
+	z-index: 200;
+}
+
+.leaflet-container a.leaflet-active {
+	outline: none;
+}
+
+.leaflet-container .leaflet-control-zoom {
+	margin-left: 7px;
+}
+
+.leaflet-marker-icon {
+	border: 4px solid #81cbdc;
+	border-radius: 3px;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-touch .leaflet-control-zoom-in {
+	text-indent: -100px;
+	width: 40px !important;
+	height: 40px !important;
+	background: rgba(0, 0, 0, 0.3) url(img/sprite.png) -187px -287px !important;
+
+	border-radius: 3px 3px 0px 0px;
+}
+
+.leaflet-control-zoom-out,
+.leaflet-touch .leaflet-control-zoom-out  {
+	text-indent: -100px;
+	width: 40px !important;
+	height: 40px !important;
+	background: rgba(0, 0, 0, 0.3) url(img/sprite.png) -287px -287px !important;
+
+	border-radius: 0px 0px 3px 3px;
+}
+
+.no-rgba .leaflet-control-zoom-in,
+.no-rgba .leaflet-touch .leaflet-control-zoom-in {
+	background: #111111 url(img/sprite.png) -187px -287px !important;
+}
+
+.no-rgba .leaflet-control-zoom-out,
+.no-rgba .leaflet-touch .leaflet-control-zoom-out {
+	background: #111111 url(img/sprite.png) -287px -287px !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+	#interactive-map header .icon,
+	.leaflet-touch .leaflet-control-zoom-out,
+	.leaflet-touch .leaflet-control-zoom-in,
+	#interactive-map .icon.panel-close {
+		background-image: url(img/sprite-2x.png) !important;
+		/* Translate the @2x sprite's dimensions back to 1x */
+		background-size: 1000px 500px; 
+	}
+}

@@ -1,0 +1,306 @@
+#dismiss,
+#panel {
+	display: none;
+}
+
+body {
+	-webkit-backface-visibility: hidden;
+	height: 100%;
+}
+
+#dismiss {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: -300px;
+    z-index: 3000;
+    display: none;
+}
+
+.has-menu #dismiss {
+	display: block;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #FFFFFF;
+    overflow-x: hidden;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.3s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#panel {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 300px;
+    overflow: hidden;
+    background: #222222;
+    z-index: 10;
+}
+
+.csstransforms3d #panel {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+
+	transform: translate3d(0px, 0px, 0px);
+	transition: transform 0.3s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.no-csstransforms3d #panel {
+	right: 0px;
+}
+
+.loaded #panel {
+	display: block;
+}
+
+#panel .panel {
+	display: none;
+}
+
+#panel .panel-active {
+	display: block;
+}
+
+#panel ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+    /*
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    -webkit-overflow-scrolling: touch;
+	*/
+
+    z-index: 100;
+}
+
+#panel li {
+	list-style-type: none;
+	border-bottom: 1px solid #444444;
+	overflow: hidden;
+	height: 49px;
+}
+
+#panel li.heading,
+#panel ul a {
+	color: #FFFFFF;
+	display: block;
+	font-family: Univers Condensed, sans-serif;
+	font-size: 16px;
+	line-height: 50px;
+	padding: 0px 20px 0px 20px;
+	background: #222222;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#panel ul a {
+	cursor: pointer;
+}
+
+#panel ul a:hover {
+	color: #CCC;
+}
+
+#panel li.heading {
+	font-weight: 700;
+	line-height: 54px;
+	padding: 0px;
+	text-transform: uppercase;
+}
+
+#panel ul a.down {
+	cursor: pointer;
+	float: right;
+	border-left: 1px solid #444444;
+	margin: 0px 0px 0px 10px;
+	width: 10px;
+	height: 49px;
+	background: url(img/sprite.png) -479px -283px;
+}
+#panel ul a.down:hover {
+	background-position: -879px -283px;
+}
+
+#panel ul a.up {
+	cursor: pointer;
+	float: left;
+	border-right: 1px solid #444444;
+	height: 49px;
+	background: url(img/sprite.png) -379px -283px;
+	width: 10px;
+	margin: 0px 20px 0px 0px;
+}
+#panel ul a.up:hover {
+	background-position: -779px -283px;
+}
+
+#panel ul a em {
+	color: #888888;
+	font-size: 14px;
+	margin: 0px 0px 0px 10px;
+}
+
+#panel ul a.up + a {
+	padding: 0;
+}
+
+#panel .current a,
+#panel .current a:hover {
+	background: #444;
+	color: white;
+	cursor: default;
+}
+
+.csstransforms3d #panel ul {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
+    -webkit-transform: translate3d(100%, 0px, 0px);
+    -moz-transform: translate3d(100%, 0px, 0px);
+    -ms-transform: translate3d(100%, 0px, 0px);
+    transform: translate3d(100%, 0px, 0px);
+}
+
+.csstransforms3d #panel ul.active {
+    z-index: 300;
+
+    -webkit-transform: translate3d(0%, 0px, 0px);
+    -moz-transform: translate3d(0%, 0px, 0px);
+    -ms-transform: translate3d(0%, 0px, 0px);
+    transform: translate3d(0%, 0px, 0px);
+}
+
+.csstransforms3d #panel ul.previous-left {
+    z-index: 200;
+
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    -moz-transform: translate3d(-100%, 0px, 0px);
+    -ms-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
+}
+
+.csstransforms3d #panel ul.previous-right {
+    z-index: 200;
+
+    -webkit-transform: translate3d(100%, 0px, 0px);
+    -moz-transform: translate3d(100%, 0px, 0px);
+    -ms-transform: translate3d(100%, 0px, 0px);
+    transform: translate3d(100%, 0px, 0px);
+}
+
+.no-csstransforms3d #panel ul {
+    z-index: 200;
+}
+
+.no-csstransforms3d #panel ul.active {
+    z-index: 300;
+    display: block;
+}
+
+.no-csstransforms3d #panel ul.previous-left {
+    display: none;
+}
+
+.no-csstransforms3d #panel ul.previous-right {
+    display: none;
+}
+
+.csstransforms3d .has-menu #panel {
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-ms-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.no-csstransforms3d .has-menu #panel {
+	right: 0px;
+}
+
+.nav-scroller {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -ms-transition: -ms-transform 0.3s ease-in-out;
+
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.3s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#nav-top li:first-child a,
+#panel .share-menu li:first-child a {
+	background: #FFF;
+	border-left: 1px solid #CCCCCC;
+	color: #333;
+	font-weight: 700;
+	padding-left: 19px;
+	text-transform: uppercase;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+	#panel ul a.up,
+	#panel ul a.down {
+		background-image: url(img/sprite-2x.png);
+		/* Translate the @2x sprite's dimensions back to 1x */
+		background-size: 1000px 500px; 
+	}
+}

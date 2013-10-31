@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8|(gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Meta -->
+        <title>Museum of New Zealand Te Papa Tongarewa, Wellington, NZ</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="application-name" content="Te Papa"/> 
+		<meta name="msapplication-TileColor" content="#FFFFFF"/> 
+		<meta name="msapplication-TileImage" content="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-114x114-precomposed.png"/>
+		<meta name="msapplication-tap-highlight" content="no" />
+
+        <!-- For iOS web apps. -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Te Papa">
+
+		<!-- These styles should be removed if the user is not editing -->
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/TePapaCore.css" />
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/overrides.css" />
+		<!-- -->
+		
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/royalslider.css">
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/leaflet.css">
+        <link rel="stylesheet" href="/Style%20Library/TePapaResource/css/style.css">
+        <link rel="stylesheet" href="/Style%20Library/TePapaResource/css/menu.css">
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/map.css">
+		
+		<!-- SNIPPED -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>if (typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='Style%20Library/TePapaResource/js/vendor/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E")); } </script>
+
+        <script src="/Style%20Library/TePapaResource/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/AC_RunActiveContent.js"></script>
+    </head>
+    <body>
+		<div id="fb-root"></div>
+
+    	<ul id="skip">
+			<li><a href="#menu" tabindex="1">Skip to navigation</a></li>
+			<li><a href="#content" tabindex="2">Skip to content</a></li>
+    	</ul>
+		<ul id="access-keys">
+		  <li><a accesskey="1" href="/" title="Link to home page.">Go to the home page</a></li>
+		  <li><a accesskey="2" href="/pages/tepapasitemap.aspx" title="Link to the site map">Go to the site map page</a></li>
+		  <li><a accesskey="3" href="/tpsearch/results.aspx" title="Link to the search.">Go to the search page</a></li>
+		  <li><a accesskey="9" href="/AboutUs/ContactUs" title="Link to contact us.">Go to the contact us page</a></li>
+		  <li><a accesskey="[" href="http://www.govt.nz" title="Government Portal www.govt.nz.">Go to the Government Portal www.govt.nz</a></li>
+		  <li><a accesskey="/" href="#" title="Top of the Page.">Go to the top of the Page</a></li>
+		</ul>
+    	<div id="page">
+	    	<div id="dismiss"></div>
+
+<nav id="panel" tabindex="-1">
+    <!-- Search menu -->
+    <div class="panel panel-search">
+        <div class="nav-scroller">
+            <ul class="active">
+                <li>
+                	<input type="text" name="search" placeholder="Search..." />
+                	<button type="submit">Search</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Share menu -->
+    <div class="panel panel-tour">
+        <div class="nav-scroller">
+            <ul id="nav-tour-top" class="previous-left" data-depth="0">
+                <li class="parent">
+                    <a rel="nav-tour-l1" class="down"></a>
+                    <a rel="nav-tour-l1">Level 1</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l2" class="down"></a>
+                    <a rel="nav-tour-l2">Level 2</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l3" class="down"></a>
+                    <a rel="nav-tour-l3">Level 3</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l4" class="down"></a>
+                    <a rel="nav-tour-l4">Level 4</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l5" class="down"></a>
+                    <a rel="nav-tour-l5">Level 5</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l6" class="down"></a>
+                    <a rel="nav-tour-l6">Level 6</a>
+                </li>
+            </ul>
+
+            <ul id="nav-tour-l1" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 1</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l2" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 2</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l3" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 3</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l4" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 4</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l5" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 5</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l6" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 6</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Share menu -->
+    <div class="panel panel-share">
+        <div class="nav-scroller">
+			<ul class="share-menu">
+			    <li><a>Share this</a></li>
+			    <li><a class="addthis_button_facebook facebook"><span>Facebook</span></a></li>
+			    <li><a class="addthis_button_twitter twitter"><span>Twitter</span></a></li>
+			    <li><a class="addthis_button_email email"><span>Email</span></a></li>
+			    <li><a class="addthis_button_compact more"><span>More...</span></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <!-- Map level menu -->
+    <div class="panel panel-map">
+        <div class="nav-scroller">
+            <ul class="active">
+                <li><a data-level="1">Level 1</a></li>
+                <li><a data-level="2">Level 2</a></li>
+                <li><a data-level="3">Level 3</a></li>
+                <li><a data-level="4">Level 4</a></li>
+                <li><a data-level="5">Level 5</a></li>
+                <li><a data-level="6">Level 6</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main menu -->
+    <div class="panel panel-menu panel-active">
+        <div class="nav-scroller">
+            <ul id="nav-top" data-depth="0" class="active" tabindex="-1">
+                <li><a href="/">Home<em>K&#257;inga</em></a></li>
+                <li class="parent">
+                    <a rel="nav-whats-on" class="down"></a>
+                    <a>What&rsquo;s on<em>E aha ana</em></a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-plan-your-visit" class="down"></a>
+                    <a>Plan your visit<em>&#256;ta toro mai</em></a>
+                </li>
+                <li><a href="/map">Map<em>Mapi</em></a></li>
+                <li class="current"><a>Education<em>Ng&#257; akoranga</em></a></li>
+                <li><a>Research<em>Ng&#257; rangahau</em></a></li>
+                <li><a>Store<em>Wharehoko</em></a></li>
+                <li><a>Venues<em>W&#257;hi</em></a></li>  
+            </ul>
+
+            <ul id="nav-whats-on" data-depth="1">
+                <li class="heading">
+                    <a rel="nav-top" class="up"></a>
+                    <a>What's on</a>
+                </li>
+                <li><a href="/event-list">Events</a></li>
+                <li><a href="#">Current exhibitions</a></li>
+                <li><a href="#">Future exhibitions</a></li>
+                <li><a href="#">Touring exhibitions</a></li>
+                <li><a href="#">Past exhibitions</a></li>
+                <li><a href="#">Past events</a></li>
+                <li><a href="#">Podcasts</a></li>
+            </ul>
+
+            <ul id="nav-plan-your-visit" data-depth="1">
+                <li class="heading">
+                    <a rel="nav-top" class="up"></a>
+                    <a>Plan your visit</a>
+                </li>
+                <li><a href="#">Getting here</a></li>
+                <li class="parent">
+                    <a rel="nav-parking" class="down"></a>
+                    <a href="#">Parking</a>
+                </li>
+                <li><a href="#">First-time visitors</a></li>
+                <li><a href="#">Guided tours</a></li>
+                <li><a href="#">Services and facilities</a></li>
+                <li><a href="#">Conditions of entry</a></li>
+                <li><a href="#">Āta toro mai</a></li>
+            </ul>
+
+            <ul id="nav-parking" data-depth="2">
+                <li class="heading">
+                    <a rel="nav-plan-your-visit" class="up"></a>
+                    <a>Parking</a>
+                </li>
+                <li><a href="#">Weekday parking specials</a></li>
+                <li><a href="#">Parking terms and conditions</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	    	<div id="container">
+		    	<header>
+		    		<div class="columnset">
+			    		<a class="logo" href="/">Te Papa<small>Our Place</small></a>
+			    		<a class="logotype" href="/"><strong>Museum of New Zealand</strong><em>Te Papa Tongarewa</em></a>
+			    		<div id="search">
+			    			<input id="search-query" type="text" placeholder="Search" value="" tabindex="3" />
+			    			<button id="search-submit" type="submit">Search</button>
+			    		</div>
+			    		<a class="icon share">Share</a>
+			    		<a class="icon search">Search</a>
+			    		<a class="icon menu">Menu</a>
+			    		<nav id="menu">
+				    		<ul>
+				    			<li><a tabindex="4" class="selected" href="/home">Home <em>K&#257;inga</em></a></li>
+				    			<li><a tabindex="5" href="/event-list">What&rsquo;s on <em>E aha ana</em></a></li>
+				    			<li><a tabindex="6" href="/styles">Plan your visit <em>&#256;ta toro mai</em></a></li>
+				    			<li><a tabindex="7" href="/map">Map <em>Mapi</em></a></li>
+				    			<li><a tabindex="8" href="/event-detail">Education <em>Ng&#257; akoranga</em></a></li>
+				    			<li><a tabindex="9" href="/exhibition-detail">Research <em>Ng&#257; rangahau</em></a></li>
+				    			<li><a tabindex="10" href="/styles">Store <em>Wharehoko</em></a></li>
+				    			<li><a tabindex="11" href="/content-generic">Venues <em>W&#257;hi</em></a></li>    			
+				    		</ul>
+			    		</nav>
+			    		<nav id="breadcrumb">
+			    			<div class="scroll">
+				    			<ul>
+				    				<li><a href="/">Home</a></li>
+				    				<li><a href="">Education</a></li>
+				    				<li><a>Professional development and teacher events</a></li>
+				    			</ul>
+				    		</div>
+			    		</nav>
+						<ul class="share-menu">
+						    <li><a class="addthis_button_facebook facebook"><span>Facebook</span></a></li>
+						    <li><a class="addthis_button_twitter twitter"><span>Twitter</span></a></li>
+						    <li><a class="addthis_button_email email"><span>Email</span></a></li>
+						    <li><a class="addthis_button_compact more"><span>More...</span></a></li>
+						</ul>
+		    		</div>
+		        </header>
+		        
+		        <div id="layout">
+		        	<div class="page-wrapper page-current">
+		        <div class="columnset">
+	<aside>
+	</aside>
+	<div id="content">
+		<article>
+			<h1><span>Book a private group tour</span></h1>
+			<div class="form_maindiv">
+				<div id="ctl00_PlaceHolderMain_ValSummary" class="errorBoxSummary" style="color:Red;display:none;">
+				</div>
+			</div>
+			<div class="form_description">
+				<p>Use this form to book a private group tour. These tours have a minimum cost, <strong>equivalent to the cost for seven adults.</strong><br /><br /><em>If you are an individual or smaller group, we suggest taking a daily tour (no booking required).</em><br /><br />Tour costs are in New Zealand dollars and include all taxes and fees – there are no additional charges. All tours depend on the availability of suitable staff.<br /><br /></p>
+			</div>
+			<fieldset class="form_wrapper">
+				<ol>
+					<li class="form_section_title">Tour information</li>
+					<li class="form_section_info">Which tour would you like?</li>
+					<li class="form_input_box">
+						<div class="InputBox">
+							<table class="TourTable" id="hello">
+								<tr>
+									<th>&nbsp;</th>
+									<th>Tour</th>
+									<th>Adult cost</th>
+									<th>Child cost</th>
+									<th>Minimum cost</th>
+									<th>Book ahead by</th>
+								</tr>
+				                <tr>
+				                    <td><a name="MaoriKapu"></a><input id="ctl00_PlaceHolderMain_MaoriKapu" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriKapu" checked="checked" class="MaoriKapu" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_MaoriKapu">Māori Experience Kapu Tī - 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriKapu">$45.00</label>
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriKapu">$32.50</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriKapu">$315.00</label></td>
+				                    <td><label>7 days</label></td>
+				                </tr>
+				                <tr>
+				                    <td><a name="MaoriExp90"></a><input id="ctl00_PlaceHolderMain_MaoriExp90" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriExp90" class="MaoriExp90" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_MaoriExp90">Māori Highlights - 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriExp90">$25.00</label></td>                    
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriExp90">$12.50</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriExp90">$175.00</label></td>
+				                    <td><label>7 days</label></td>
+				                </tr>
+				                <tr>
+				                    <td><a name="MaoriExp60"></a><input id="ctl00_PlaceHolderMain_MaoriExp60" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriExp60" class="MaoriExp60" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_MaoriExp60">Māori Highlights - 60 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriExp60">$20.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_MaoriExp60">$10.00</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriExp60">$140.00</label></td>
+				                    <td><label>7 days</label></td>
+				                </tr>
+				                <tr>
+				                    <td><a name="FabTePapa"></a><input id="ctl00_PlaceHolderMain_FabTePapa" type="radio" name="ctl00$PlaceHolderMain$TourType" value="FabTePapa" class="FabTePapa" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_FabTePapa">Te Papa Highlights  – 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_FabTePapa">$18.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_FabTePapa">$9.00</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_FabTePapa">$126.00</label></td>
+				                    <td><label>7 days</label></td>                    
+				                </tr>
+				                <tr>
+				                    <td><a name="TePapaHighlights"></a><input id="ctl00_PlaceHolderMain_TePapaHighlights" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaHighlights" class="TePapaHighlights" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_TePapaHighlights">Te Papa Highlights & High Ride - 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaHighlights">$25.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaHighlights">$12.50</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaHighlights">$175.00</label></td>
+				                    <td><label>7 days</label></td>                    
+				                </tr>                
+				                <tr>
+				                    <td><a name="TePapaSampler"></a><input id="ctl00_PlaceHolderMain_TePapaSampler" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaSampler" class="TePapaSampler" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_TePapaSampler">Te Papa Highlights - 60 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaSampler">$14.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaSampler">$7.00</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaSampler">$98.00</label></td>
+				                    <td><label>7 days</label></td>                    
+				                </tr>
+				                <!--
+				                <tr>
+				                    <td><a name="TePapaArt90"></a><input id="ctl00_PlaceHolderMain_TePapaArt90" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaArt90" class="TePapaArt90" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_TePapaArt90">Toi Te Papa Art - 90 minutes</label>
+				                        <br />
+				                        Major artworks and 1,000 years of visual culture 
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$14.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$7.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$98.00</label></td>
+				                    <td><label>7 days</label></td>                    
+				                </tr>     
+				                -->
+				                <tr>
+				                    <td><a name="TePapaArt60"></a><input id="ctl00_PlaceHolderMain_TePapaArt60" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaArt60" class="TePapaArt60" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_TePapaArt60">Art Highlights - 60 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaArt60">$14.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TePapaArt60">$7.00</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaArt60">$98.00</label></td>
+				                    <td><label>7 days</label></td>                    
+				                </tr>                                  
+				                <tr>
+				                    <td><a name="KiwiDiscoverer"></a><input id="ctl00_PlaceHolderMain_KiwiDiscoverer" type="radio" name="ctl00$PlaceHolderMain$TourType" value="KiwiDiscoverer" class="KiwiDiscoverer" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_KiwiDiscoverer">Discovery Highlights – 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">Not applicable</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">$9.00</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">$90.00</label></td>
+				                    <td><label>7 days</label></td>    
+				                </tr>
+				                <tr>
+				                    <td><a name="Backstage"></a><input id="ctl00_PlaceHolderMain_Backstage" type="radio" name="ctl00$PlaceHolderMain$TourType" value="Backstage" class="Backstage" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_Backstage">Backstage Te Papa - 60 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_Backstage">Price on application</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_Backstage">Not applicable</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_Backstage">Price on application</label></td>                    
+				                    <td><label>1 month</label></td>  
+				                </tr>                                                                                                                                
+				                <tr>
+				                    <td><a name="ExploringTePapa"></a><input id="ctl00_PlaceHolderMain_ExploringTePapa" type="radio" name="ctl00$PlaceHolderMain$TourType" value="ExploringTePapa" class="ExploringTePapa" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_ExploringTePapa">Exploring Te Papa for People with Visual Impairments – 90 minutes</label>
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_ExploringTePapa">Free</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_ExploringTePapa">Free</label></td>
+				                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_ExploringTePapa">Not applicable</label></td>                    
+				                    <td><label>14 days</label></td>  
+				                </tr>
+				                <!--
+								<tr>
+				                    <td><a name="TasteOfTreasures"></a><input id="ctl00_PlaceHolderMain_TasteOfTreasures" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TasteOfTreasures" class="TasteOfTreasures" /></td>
+				                    <td>
+				                        <label for="ctl00_PlaceHolderMain_TasteOfTreasures">Taste of Treasures  – 60 minutes</label>
+				                        <br />
+				                        Insights into Māori culture through traditional and contemporary treasures, followed by light refreshments – 
+										rēwena bread with pikopiko pesto, kawakawa and mānuka honey shortbread, and kawakawa tea with mānuka honey
+				                        <br /><br />
+				                    </td>
+				                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$24.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$12.00</label></td>
+				                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$168.00</label></td>                    
+				                    <td><label>14 days</label></td>  
+				                </tr>                            
+				                -->
+						</table>        
+						Costs valid until 30th June 2014
+					</div>
+				</li>
+				<li class="form_input_box">
+					<div class="InputBox">All tours are subject to availability and confirmation at the time of booking.<br /><br /><strong>Please note: a minimum charge applies to bookings for fewer than 7 people</strong>. This charge is the equivalent of the price for 7 adults.</div>
+				</li>
+				<li class="form_input_box">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_NumAdults_textBox">Number of adults</label>
+						<br />
+						<input name="ctl00$PlaceHolderMain$NumAdults_textBox" type="text" value="0" id="ctl00_PlaceHolderMain_NumAdults_textBox" class="NumAdults" style="width:340px;" />
+					</div>
+				</li>
+				<li class="form_input_box">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_NumChildren_textBox">Number of children</label><br />
+						<input name="ctl00$PlaceHolderMain$NumChildren_textBox" type="text" value="0" id="ctl00_PlaceHolderMain_NumChildren_textBox" class="NumChildren" style="width:340px;" />
+					</div>
+					<div class="InputBox">
+						<small>Child = aged 15 or under</small>
+					</div>
+				</li>
+        	</ol>
+		</fieldset>
+		<br />
+		<br />
+		<fieldset class="form_wrapper">
+			<ol>
+				<li class="form_section_title">Tour date and time</li>
+				<li class="form_section_info">When would you like to visit?</li>
+				<li class="form_input_box">
+					<div class="InputBox">
+						<div class="" style="">
+							<label for="ctl00_PlaceHolderMain_DateOfVisit_dateBox">Date</label>
+							&nbsp;<small>(dd/mm/yyyy)</small>
+							<br />
+							<input name="ctl00$PlaceHolderMain$DateOfVisit_dateBox" type="text" id="ctl00_PlaceHolderMain_DateOfVisit_dateBox" class="date-pick" />
+							<div style="clear:both; height: 0px;">&nbsp;</div>
+						</div>
+                	</div>
+            	</li>
+            	<li class="form_input_box">
+            		<div class="InputBox">
+            			<label for="ctl00_PlaceHolderMain_TimeOfVisit">Time</label>
+            			<br />
+            			<select name="ctl00$PlaceHolderMain$TimeOfVisit" id="ctl00_PlaceHolderMain_TimeOfVisit" style="font-size: 10pt;">
+							<option selected="selected" value="10:00am">10:00am</option>
+							<option value="10:30am">10:30am</option>
+							<option value="10:30am">10:30am</option>
+							<option value="11:00am">11:00am</option>
+							<option value="11:30am">11:30am</option>
+							<option value="12:00pm">12:00pm</option>
+							<option value="12:30pm">12:30pm</option>
+							<option value="1:00pm">1:00pm</option>
+							<option value="1:30pm">1:30pm</option>
+							<option value="2:00pm">2:00pm</option>
+							<option value="2:30pm">2:30pm</option>
+							<option value="3:00pm">3:00pm</option>
+							<option value="3:30pm">3:30pm</option>
+							<option value="4:00pm">4:00pm</option>
+							<option value="4:30pm">4:30pm</option>
+							<option value="5:00pm">5:00pm</option>
+							<option value="5:30pm (Thursday only)">5:30pm (Thursday only)</option>
+							<option value="6:00pm">6:00pm (Thursday only)</option>
+							<option value="6:30pm (Thursday only)">6:30pm (Thursday only)</option>
+							<option value="7:00pm (Thursday only)">7:00pm (Thursday only)</option>
+							<option value="7:00pm (Thursday only)">7:30pm (Thursday only)</option>
+						</select>                    
+						<br /><br />Tours must be completed within Te Papa's opening hours, unless they are associated with a function at the Museum. Te Papa is open every day of the year from 10am to 6pm, and from 10am to 9pm on Thursdays.
+					</div>
+				</li>
+			</ol>
+		</fieldset>    
+        <br />
+        <br />
+        <fieldset class="form_wrapper">
+        	<ol>
+        		<li class="form_section_title">Contact details</li>
+        		<li class="form_section_info">Booking contact person</li>
+        		<li class="form_input_box">
+        			<div class="InputBox" style="">
+        				<label for="ctl00_PlaceHolderMain_NameBox_textBox">Name</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+        				<input name="ctl00$PlaceHolderMain$NameBox_textBox" type="text" id="ctl00_PlaceHolderMain_NameBox_textBox" class="DefaultTextBox" />
+        			</div>
+        		</li>
+        		<li class="form_input_box">
+        			<div class="InputBox" style="">
+        				<label for="ctl00_PlaceHolderMain_EmailBox_textBox">Email</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+        				<input name="ctl00$PlaceHolderMain$EmailBox_textBox" type="text" id="ctl00_PlaceHolderMain_EmailBox_textBox" class="DefaultTextBox" />
+        			</div>
+        		</li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_CompanyBox_textBox">Company</label><br />
+<input name="ctl00$PlaceHolderMain$CompanyBox_textBox" type="text" id="ctl00_PlaceHolderMain_CompanyBox_textBox" class="DefaultTextBox" /></div>
+
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_HomeNumberBox_textBox">Phone number</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<input name="ctl00$PlaceHolderMain$HomeNumberBox_textBox" type="text" id="ctl00_PlaceHolderMain_HomeNumberBox_textBox" class="DefaultTextBox" style="width:185px;" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_AddressBox_textBox">Billing address</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<textarea name="ctl00$PlaceHolderMain$AddressBox_textBox" rows="4" cols="20" id="ctl00_PlaceHolderMain_AddressBox_textBox" class="DefaultTextBoxLarge"></textarea></div>
+        
+        </li>
+        
+        <li class="form_section_info">Alternate contact person</li>
+        <li>
+			<p>Please fill in the following section if:</p>
+			<ul>
+				<li style="line-height: 0.1em;">You are booking on behalf of another person</li>
+				<li style="line-height: 0.1em;">You won't be participating in the tour</li>
+				<li style="line-height: 0.1em;">Your phone may not be reachable on the day of the tour</li>
+			</ul>
+		</li>
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_AlternateNameBox_textBox">Alternate contact name</label><br />
+<input name="ctl00$PlaceHolderMain$AlternateNameBox_textBox" type="text" id="ctl00_PlaceHolderMain_AlternateNameBox_textBox" class="DefaultTextBox" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_AlternateContactNumber_textBox">Alternate contact phone</label><br />
+<input name="ctl00$PlaceHolderMain$AlternateContactNumber_textBox" type="text" id="ctl00_PlaceHolderMain_AlternateContactNumber_textBox" class="DefaultTextBox" style="width:185px;" /></div>
+        
+        </li>
+        </ol>
+    </fieldset> 
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Languages</li>
+            
+            <li class="form_section_info">
+                Do you require the tour to be delivered in a foreign language?
+                <br />            
+            </li>
+            
+            <li class="form_input_box">
+                <div class="InputBox">                                    
+                    Tours in languages other than English depend on the availability of suitable Hosts.
+                    <br /><br />
+                    <input id="ctl00_PlaceHolderMain_English" type="radio" name="ctl00$PlaceHolderMain$Language" value="English" checked="checked" /><label for="ctl00_PlaceHolderMain_English"> No additional languages (English only)</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_French" type="radio" name="ctl00$PlaceHolderMain$Language" value="French" /><label for="ctl00_PlaceHolderMain_French"> French</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_German" type="radio" name="ctl00$PlaceHolderMain$Language" value="German" /><label for="ctl00_PlaceHolderMain_German"> German</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_Japanese" type="radio" name="ctl00$PlaceHolderMain$Language" value="Japanese" /><label for="ctl00_PlaceHolderMain_Japanese"> Japanese</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_Mandarin" type="radio" name="ctl00$PlaceHolderMain$Language" value="Mandarin" /><label for="ctl00_PlaceHolderMain_Mandarin"> Chinese (Mandarin)</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_MaoriLang" type="radio" name="ctl00$PlaceHolderMain$Language" value="MaoriLang" /><label for="ctl00_PlaceHolderMain_MaoriLang"> Te Reo Maori</label>
+                </div>
+            </li>
+        </ol>          
+    </fieldset>
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Group information</li>
+            
+            <li class="form_input_box">
+                <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupNames_textBox">Who are the people taking the tour?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupNames_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupNames_textBox" class="DefaultTextBoxLarge"></textarea></div>
+
+            </li>
+            <li><div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupFrom_textBox">Where are they from?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupFrom_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupFrom_textBox" class="DefaultTextBoxLarge"></textarea></div>
+</li>
+            <li><div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupTravellingFrom_textBox">Where will they be travelling from?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupTravellingFrom_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupTravellingFrom_textBox" class="DefaultTextBoxLarge"></textarea></div>
+</li>
+        </ol>
+    </fieldset>
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Special interestes/requests</li>
+            
+            <li class="form_input_box">
+                <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_specialRequests_textBox">Additional comments</label><br />
+<textarea name="ctl00$PlaceHolderMain$specialRequests_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_specialRequests_textBox" class="DefaultTextBoxLarge"></textarea></div>
+
+            </li>
+        </ol>
+    </fieldset>    
+
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+		<ol>
+			<li class="form_input_box">
+				<div class="InputBox">
+				<div style="float: left;">
+					<input type="button" value="Calculate booking" onclick="javascript: Calculate(); return false;" class="calculateBtn"/>
+				</div>
+				<span style="color: red; display: block; float:left; margin-left: 5px;">*</span>
+				<div style="clear: both"></div>
+				</div>
+			</li>
+        </ol>
+        
+        <fieldset id="TotalFieldSet">
+            
+            <div class="InputBox" style="padding: 10px 18px 10px 18px;">
+            
+                <h2>Total cost</h2>
+            
+                <div id="nonMinCost">
+					<table width="100%">
+						<tr>
+							<td width="70%";>Children:</td>
+							<td width="15%"; align="right"><span class="SummaryChildCost"></span></td>
+							<td width="15%"; align="right"><span class="TotalChildCost"></span></td>
+						</tr>
+						<tr>
+							<td width="70%">Adults:</td>
+							<td width="15%"; align="right"><span class="SummaryAdultCost"></span></td>
+							<td width="15%"; align="right"><span class="TotalAdultCost"></span></td>
+						</tr>
+					</table>
+
+                    
+                    
+                    <div class="cleararea"></div>
+                </div>
+                
+                <div id="MinCost">
+					<table>
+						<tr>
+							<td>Children:</td>
+							<td><span class="childrenCount"></span></td>
+						</tr>
+						<tr>
+							<td>Adults:</td>
+							<td><span class="adultCount"></span></td>
+						</tr>
+					</table>
+                    
+                    <div class="cleararea"></div>
+                    
+                    <div style="float: left;"><span style="color: Red; font-weight: bold;">Minimum group cost:</span></div>
+                    <div style="float: right;"><span class="minCost"></span></div>
+                    
+                    <div class="cleararea"></div>                
+                </div>
+                
+                <hr style="color: #ccc;"/>
+                
+                <div style="float: left; width: 300px;"><h3 class="TotalCostLabel">Total cost:</h3></div>
+                <div style="float: right;"><h3><span class="totalcost"></span></h3></div>
+            </div>
+            
+        </fieldset>
+    </fieldset>
+    
+    <br /><br />
+    <div id="ButtonDiv" class="hide">
+        <span></span>
+        <input type="submit" name="ctl00$PlaceHolderMain$ButtonSubmit" value="Submit booking request" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$ButtonSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_ButtonSubmit" class="SubmitButton" />       
+    </div>
+
+    
+    <br /><br /><br />
+    
+<h1><span>Book a private group tour</span></h1>
+
+<div class="form_maindiv">
+	<div id="ctl00_PlaceHolderMain_ValSummary" class="errorBoxSummary" style="color:Red;">Your enquiry was unable to be submitted. Please correct the errors listed below and click submit again.<br /><br /><ul><li>Sorry, but we need your name</li><li>You must provide an email address</li><li>Invalid contact phone number</li><li>You must provide a billing address</li></ul>
+</div>
+    </div>
+
+    <div class="form_description">
+        <p>
+        Use this form to book a private group tour. These tours have a minimum cost, <strong>equivalent to the cost for seven adults.</strong>
+        <br /><br />
+        <em>If you are an individual or smaller group, we suggest taking a daily tour (no booking required).</em>
+        <br /><br />
+        Tour costs are in New Zealand dollars and include all taxes and fees – there are no additional charges. All tours depend on the availability of suitable staff.
+        <br /><br />
+        </p>
+        
+        <!--
+        <div class="form_info_div">        
+            <input id="ctl00_PlaceHolderMain_Reservation" type="radio" name="ctl00$PlaceHolderMain$EnquiryType" value="Reservation" /><label for="ctl00_PlaceHolderMain_Reservation"> I am making a reservation</label>
+            <br />
+            <input id="ctl00_PlaceHolderMain_Enquiry" type="radio" name="ctl00$PlaceHolderMain$EnquiryType" value="Enquiry" /><label for="ctl00_PlaceHolderMain_Enquiry"> I am making an enquiry only</label>
+        </div>        
+        -->
+    </div>
+    
+    <fieldset class="form_wrapper"> 
+        <ol>
+        <li class="form_section_title">
+            Tour information
+        </li>
+        
+        <li class="form_section_info">Which tour would you like?</li>
+        
+        <li class="form_input_box">
+        <div class="InputBox">
+            <table class="TourTable" id="hello">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Tour</th>
+                    <th>Adult cost</th>
+                    <th>Child cost</th>
+                    <th>Minimum cost</th>
+                    <th>Book ahead by</th>
+                </tr>
+                <tr>
+                    <td><a name="MaoriKapu"></a><input id="ctl00_PlaceHolderMain_MaoriKapu" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriKapu" class="MaoriKapu" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_MaoriKapu">Māori Experience Kapu Tī - 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_MaoriKapu">$45.00</label>
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_MaoriKapu">$32.50</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriKapu">$315.00</label></td>
+                    <td><label>7 days</label></td>
+                </tr>
+                <tr>
+                    <td><a name="MaoriExp90"></a><input id="ctl00_PlaceHolderMain_MaoriExp90" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriExp90" class="MaoriExp90" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_MaoriExp90">Māori Highlights - 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_MaoriExp90">$25.00</label></td>                    
+                    <td><label for="ctl00_PlaceHolderMain_MaoriExp90">$12.50</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriExp90">$175.00</label></td>
+                    <td><label>7 days</label></td>
+                </tr>
+                <tr>
+                    <td><a name="MaoriExp60"></a><input id="ctl00_PlaceHolderMain_MaoriExp60" type="radio" name="ctl00$PlaceHolderMain$TourType" value="MaoriExp60" class="MaoriExp60" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_MaoriExp60">Māori Highlights - 60 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_MaoriExp60">$20.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_MaoriExp60">$10.00</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_MaoriExp60">$140.00</label></td>
+                    <td><label>7 days</label></td>
+                </tr>
+                <tr>
+                    <td><a name="FabTePapa"></a><input id="ctl00_PlaceHolderMain_FabTePapa" type="radio" name="ctl00$PlaceHolderMain$TourType" value="FabTePapa" class="FabTePapa" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_FabTePapa">Te Papa Highlights  – 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_FabTePapa">$18.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_FabTePapa">$9.00</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_FabTePapa">$126.00</label></td>
+                    <td><label>7 days</label></td>                    
+                </tr>
+                <tr>
+                    <td><a name="TePapaHighlights"></a><input id="ctl00_PlaceHolderMain_TePapaHighlights" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaHighlights" class="TePapaHighlights" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_TePapaHighlights">Te Papa Highlights & High Ride - 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaHighlights">$25.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaHighlights">$12.50</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaHighlights">$175.00</label></td>
+                    <td><label>7 days</label></td>                    
+                </tr>                
+                <tr>
+                    <td><a name="TePapaSampler"></a><input id="ctl00_PlaceHolderMain_TePapaSampler" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaSampler" checked="checked" class="TePapaSampler" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_TePapaSampler">Te Papa Highlights - 60 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaSampler">$14.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaSampler">$7.00</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaSampler">$98.00</label></td>
+                    <td><label>7 days</label></td>                    
+                </tr>
+                <!--
+                <tr>
+                    <td><a name="TePapaArt90"></a><input id="ctl00_PlaceHolderMain_TePapaArt90" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaArt90" class="TePapaArt90" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_TePapaArt90">Toi Te Papa Art - 90 minutes</label>
+                        <br />
+                        Major artworks and 1,000 years of visual culture 
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$14.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$7.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaArt90">$98.00</label></td>
+                    <td><label>7 days</label></td>                    
+                </tr>     
+                -->
+                <tr>
+                    <td><a name="TePapaArt60"></a><input id="ctl00_PlaceHolderMain_TePapaArt60" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TePapaArt60" class="TePapaArt60" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_TePapaArt60">Art Highlights - 60 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaArt60">$14.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TePapaArt60">$7.00</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_TePapaArt60">$98.00</label></td>
+                    <td><label>7 days</label></td>                    
+                </tr>                                  
+                <tr>
+                    <td><a name="KiwiDiscoverer"></a><input id="ctl00_PlaceHolderMain_KiwiDiscoverer" type="radio" name="ctl00$PlaceHolderMain$TourType" value="KiwiDiscoverer" class="KiwiDiscoverer" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_KiwiDiscoverer">Discovery Highlights – 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">Not applicable</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">$9.00</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_KiwiDiscoverer">$90.00</label></td>
+                    <td><label>7 days</label></td>    
+                </tr>
+                <tr>
+                    <td><a name="Backstage"></a><input id="ctl00_PlaceHolderMain_Backstage" type="radio" name="ctl00$PlaceHolderMain$TourType" value="Backstage" class="Backstage" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_Backstage">Backstage Te Papa - 60 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_Backstage">Price on application</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_Backstage">Not applicable</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_Backstage">Price on application</label></td>                    
+                    <td><label>1 month</label></td>  
+                </tr>                                                                                                                                
+                <tr>
+                    <td><a name="ExploringTePapa"></a><input id="ctl00_PlaceHolderMain_ExploringTePapa" type="radio" name="ctl00$PlaceHolderMain$TourType" value="ExploringTePapa" class="ExploringTePapa" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_ExploringTePapa">Exploring Te Papa for People with Visual Impairments – 90 minutes</label>
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_ExploringTePapa">Free</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_ExploringTePapa">Free</label></td>
+                    <td class="minimumCost"><label for="ctl00_PlaceHolderMain_ExploringTePapa">Not applicable</label></td>                    
+                    <td><label>14 days</label></td>  
+                </tr>
+                <!--
+				<tr>
+                    <td><a name="TasteOfTreasures"></a><input id="ctl00_PlaceHolderMain_TasteOfTreasures" type="radio" name="ctl00$PlaceHolderMain$TourType" value="TasteOfTreasures" class="TasteOfTreasures" /></td>
+                    <td>
+                        <label for="ctl00_PlaceHolderMain_TasteOfTreasures">Taste of Treasures  – 60 minutes</label>
+                        <br />
+                        Insights into Māori culture through traditional and contemporary treasures, followed by light refreshments – 
+						rēwena bread with pikopiko pesto, kawakawa and mānuka honey shortbread, and kawakawa tea with mānuka honey
+                        <br /><br />
+                    </td>
+                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$24.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$12.00</label></td>
+                    <td><label for="ctl00_PlaceHolderMain_TasteOfTreasures">$168.00</label></td>                    
+                    <td><label>14 days</label></td>  
+                </tr>                            
+                -->
+            </table>        
+            Costs valid until 30th June 2014
+        </div>
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox">
+            All tours are subject to availability and confirmation at the time of booking.
+            <br /><br />
+            <strong>Please note: a minimum charge applies to bookings for fewer than 7 people</strong>. This charge is the equivalent of the price for 7 adults.
+            </div>
+        </li>
+                
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_NumAdults_textBox">Number of adults</label><br />
+<input name="ctl00$PlaceHolderMain$NumAdults_textBox" type="text" value="0" id="ctl00_PlaceHolderMain_NumAdults_textBox" class="NumAdults" style="width:340px;" /></div>
+
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_NumChildren_textBox">Number of children</label><br />
+<input name="ctl00$PlaceHolderMain$NumChildren_textBox" type="text" value="0" id="ctl00_PlaceHolderMain_NumChildren_textBox" class="NumChildren" style="width:340px;" /></div>
+
+            <div class="InputBox">
+            <small>Child = aged 15 or under</small>
+            </div>
+        </li>        
+        </ol>
+        
+    </fieldset>        
+    
+    <br /><br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Tour date and time</li>
+                     
+            <li class="form_section_info">
+                When would you like to visit?
+            </li>
+            
+            <li class="form_input_box">
+                <div class="InputBox">
+                <div class="" style="">
+<label for="ctl00_PlaceHolderMain_DateOfVisit_dateBox">Date</label>&nbsp;<small>(dd/mm/yyyy)</small><br />
+<input name="ctl00$PlaceHolderMain$DateOfVisit_dateBox" type="text" id="ctl00_PlaceHolderMain_DateOfVisit_dateBox" class="date-pick" /><div style="clear:both; height: 0px;">&nbsp;</div></div>
+
+                </div>
+            </li>
+            
+            <li class="form_input_box">
+                <div class="InputBox">
+                    <label for="ctl00_PlaceHolderMain_TimeOfVisit">Time</label>
+                    <br />
+                    <select name="ctl00$PlaceHolderMain$TimeOfVisit" id="ctl00_PlaceHolderMain_TimeOfVisit" style="font-size: 10pt;">
+	<option selected="selected" value="10:00am">10:00am</option>
+	<option value="10:30am">10:30am</option>
+	<option value="10:30am">10:30am</option>
+	<option value="11:00am">11:00am</option>
+	<option value="11:30am">11:30am</option>
+	<option value="12:00pm">12:00pm</option>
+	<option value="12:30pm">12:30pm</option>
+	<option value="1:00pm">1:00pm</option>
+	<option value="1:30pm">1:30pm</option>
+	<option value="2:00pm">2:00pm</option>
+	<option value="2:30pm">2:30pm</option>
+	<option value="3:00pm">3:00pm</option>
+	<option value="3:30pm">3:30pm</option>
+	<option value="4:00pm">4:00pm</option>
+	<option value="4:30pm">4:30pm</option>
+	<option value="5:00pm">5:00pm</option>
+	<option value="5:30pm (Thursday only)">5:30pm (Thursday only)</option>
+	<option value="6:00pm">6:00pm (Thursday only)</option>
+	<option value="6:30pm (Thursday only)">6:30pm (Thursday only)</option>
+	<option value="7:00pm (Thursday only)">7:00pm (Thursday only)</option>
+	<option value="7:00pm (Thursday only)">7:30pm (Thursday only)</option>
+
+</select>                    
+                <br /><br />                
+                Tours must be completed within Te Papa's opening hours, unless they are associated with a function at the Museum. Te Papa is open every day of the year from 10am to 6pm, and from 10am to 9pm on Thursdays.                                                    
+                </div>
+            </li>
+            
+        </ol>     
+    </fieldset>    
+        
+    <br /><br />    
+    
+    
+    <fieldset class="form_wrapper">
+        <ol>
+        <li class="form_section_title">Contact details</li>
+		<li class="form_section_info">Booking contact person</li>
+                
+        <li class="form_input_box">
+            <div class="errorBox" style=""><span style="color: red;">Sorry, but we need your name</span>
+<br />
+<label for="ctl00_PlaceHolderMain_NameBox_textBox">Name</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<input name="ctl00$PlaceHolderMain$NameBox_textBox" type="text" id="ctl00_PlaceHolderMain_NameBox_textBox" class="DefaultTextBox" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="errorBox" style=""><span style="color: red;">You must provide an email address</span>
+<br />
+<label for="ctl00_PlaceHolderMain_EmailBox_textBox">Email</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<input name="ctl00$PlaceHolderMain$EmailBox_textBox" type="text" id="ctl00_PlaceHolderMain_EmailBox_textBox" class="DefaultTextBox" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_CompanyBox_textBox">Company</label><br />
+<input name="ctl00$PlaceHolderMain$CompanyBox_textBox" type="text" id="ctl00_PlaceHolderMain_CompanyBox_textBox" class="DefaultTextBox" /></div>
+
+        </li>
+        
+        <li class="form_input_box">
+            <div class="errorBox" style=""><span style="color: red;">Phone number is required.</span>
+<br />
+<label for="ctl00_PlaceHolderMain_HomeNumberBox_textBox">Phone number</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<input name="ctl00$PlaceHolderMain$HomeNumberBox_textBox" type="text" id="ctl00_PlaceHolderMain_HomeNumberBox_textBox" class="DefaultTextBox" style="width:185px;" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="errorBox" style=""><span style="color: red;">You must provide a billing address</span>
+<br />
+<label for="ctl00_PlaceHolderMain_AddressBox_textBox">Billing address</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+<textarea name="ctl00$PlaceHolderMain$AddressBox_textBox" rows="4" cols="20" id="ctl00_PlaceHolderMain_AddressBox_textBox" class="DefaultTextBoxLarge"></textarea></div>
+        
+        </li>
+        
+        <li class="form_section_info">Alternate contact person</li>
+        <li>
+			<p>Please fill in the following section if:</p>
+			<ul>
+				<li style="line-height: 0.1em;">You are booking on behalf of another person</li>
+				<li style="line-height: 0.1em;">You won't be participating in the tour</li>
+				<li style="line-height: 0.1em;">Your phone may not be reachable on the day of the tour</li>
+			</ul>
+		</li>
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_AlternateNameBox_textBox">Alternate contact name</label><br />
+<input name="ctl00$PlaceHolderMain$AlternateNameBox_textBox" type="text" id="ctl00_PlaceHolderMain_AlternateNameBox_textBox" class="DefaultTextBox" /></div>
+        
+        </li>
+        
+        <li class="form_input_box">
+            <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_AlternateContactNumber_textBox">Alternate contact phone</label><br />
+<input name="ctl00$PlaceHolderMain$AlternateContactNumber_textBox" type="text" id="ctl00_PlaceHolderMain_AlternateContactNumber_textBox" class="DefaultTextBox" style="width:185px;" /></div>
+        
+        </li>
+        </ol>
+    </fieldset> 
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Languages</li>
+            
+            <li class="form_section_info">
+                Do you require the tour to be delivered in a foreign language?
+                <br />            
+            </li>
+            
+            <li class="form_input_box">
+                <div class="InputBox">                                    
+                    Tours in languages other than English depend on the availability of suitable Hosts.
+                    <br /><br />
+                    <input id="ctl00_PlaceHolderMain_English" type="radio" name="ctl00$PlaceHolderMain$Language" value="English" checked="checked" /><label for="ctl00_PlaceHolderMain_English"> No additional languages (English only)</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_French" type="radio" name="ctl00$PlaceHolderMain$Language" value="French" /><label for="ctl00_PlaceHolderMain_French"> French</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_German" type="radio" name="ctl00$PlaceHolderMain$Language" value="German" /><label for="ctl00_PlaceHolderMain_German"> German</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_Japanese" type="radio" name="ctl00$PlaceHolderMain$Language" value="Japanese" /><label for="ctl00_PlaceHolderMain_Japanese"> Japanese</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_Mandarin" type="radio" name="ctl00$PlaceHolderMain$Language" value="Mandarin" /><label for="ctl00_PlaceHolderMain_Mandarin"> Chinese (Mandarin)</label>
+                    <br />
+                    <input id="ctl00_PlaceHolderMain_MaoriLang" type="radio" name="ctl00$PlaceHolderMain$Language" value="MaoriLang" /><label for="ctl00_PlaceHolderMain_MaoriLang"> Te Reo Maori</label>
+                </div>
+            </li>
+        </ol>          
+    </fieldset>
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Group information</li>
+            
+            <li class="form_input_box">
+                <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupNames_textBox">Who are the people taking the tour?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupNames_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupNames_textBox" class="DefaultTextBoxLarge"></textarea></div>
+
+            </li>
+            <li><div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupFrom_textBox">Where are they from?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupFrom_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupFrom_textBox" class="DefaultTextBoxLarge"></textarea></div>
+</li>
+            <li><div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_groupTravellingFrom_textBox">Where will they be travelling from?</label><br />
+<textarea name="ctl00$PlaceHolderMain$groupTravellingFrom_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_groupTravellingFrom_textBox" class="DefaultTextBoxLarge"></textarea></div>
+</li>
+        </ol>
+    </fieldset>
+    
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+        <ol>
+            <li class="form_section_title">Special interestes/requests</li>
+            
+            <li class="form_input_box">
+                <div class="InputBox" style=""><label for="ctl00_PlaceHolderMain_specialRequests_textBox">Additional comments</label><br />
+<textarea name="ctl00$PlaceHolderMain$specialRequests_textBox" rows="6" cols="20" id="ctl00_PlaceHolderMain_specialRequests_textBox" class="DefaultTextBoxLarge"></textarea></div>
+
+            </li>
+        </ol>
+    </fieldset>    
+
+    <br />
+    <br />
+    
+    <fieldset class="form_wrapper">
+		<ol>
+			<li class="form_input_box">
+				<div class="InputBox">
+				<div style="float: left;">
+					<input type="button" value="Calculate booking" onclick="javascript: Calculate(); return false;" class="calculateBtn"/>
+				</div>
+				<span style="color: red; display: block; float:left; margin-left: 5px;">*</span>
+				<div style="clear: both"></div>
+				</div>
+			</li>
+        </ol>
+        
+        <fieldset id="TotalFieldSet">
+            
+            <div class="InputBox" style="padding: 10px 18px 10px 18px;">
+            
+                <h2>Total cost</h2>
+            
+                <div id="nonMinCost">
+					<table width="100%">
+						<tr>
+							<td width="70%";>Children:</td>
+							<td width="15%"; align="right"><span class="SummaryChildCost"></span></td>
+							<td width="15%"; align="right"><span class="TotalChildCost"></span></td>
+						</tr>
+						<tr>
+							<td width="70%">Adults:</td>
+							<td width="15%"; align="right"><span class="SummaryAdultCost"></span></td>
+							<td width="15%"; align="right"><span class="TotalAdultCost"></span></td>
+						</tr>
+					</table>
+
+                    
+                    
+                    <div class="cleararea"></div>
+                </div>
+                
+                <div id="MinCost">
+					<table>
+						<tr>
+							<td>Children:</td>
+							<td><span class="childrenCount"></span></td>
+						</tr>
+						<tr>
+							<td>Adults:</td>
+							<td><span class="adultCount"></span></td>
+						</tr>
+					</table>
+                    
+                    <div class="cleararea"></div>
+                    
+                    <div style="float: left;"><span style="color: Red; font-weight: bold;">Minimum group cost:</span></div>
+                    <div style="float: right;"><span class="minCost"></span></div>
+                    
+                    <div class="cleararea"></div>                
+                </div>
+                
+                <hr style="color: #ccc;"/>
+                
+                <div style="float: left; width: 300px;"><h3 class="TotalCostLabel">Total cost:</h3></div>
+                <div style="float: right;"><h3><span class="totalcost"></span></h3></div>
+            </div>
+            
+        </fieldset>
+    </fieldset>
+    
+    <br /><br />
+    <div id="ButtonDiv" class="hide">
+        <span></span>
+        <input type="submit" name="ctl00$PlaceHolderMain$ButtonSubmit" value="Submit booking request" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$ButtonSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_ButtonSubmit" class="SubmitButton" />       
+    </div>
+   <br /><br /><br />    
+
+   
+	</div>
+		</article>
+	</div>
+</div>
+		        	</div>
+		       	</div>
+
+		        <div id="sitemap">
+					<div class="columnset">
+						<ul>
+							<li><a href="/whatson">What&rsquo;s on</a></li>
+							<li><a href="/VisitingTePapa">Plan your visit</a></li>
+							<li><a href="/map/">Map</a></li>
+							<li><a href="http://collections.tepapa.govt.nz/">Collections</a></li>
+							<li><a href="/WhatsOn/exhibitions/Pages/Allexhibitions.aspx?exhibitiontime=Current%20exhibitions&exhibitiontype=All">Exhibitions </a></li>
+							<li><a href="/VisitingTePapa/ServicesAndFacilities/Pages/FoodAndDrink.aspx">Caf&eacute;</a></li>
+							<li><a href="/AboutUs">About Te Papa</a></li>
+							<li><a href="/TePapaPress">Blog</a></li>
+							<li><a href="/WhatsOn/allevents/Pages/EventsCalendar.aspx?eventtype=All">Events </a></li>
+							<li><a href="http://www.tepapastore.co.nz/">Store</a></li>
+							<li><a href="/AboutUs/JobsAtTePapa">Jobs</a></li>
+							<li><a href="/images/">Picture Library</a></li>
+							<li><a href="/WhatsOn/Kahu-KidsAtTePapa/Whatson/Pages/Kids.aspx">Kids </a></li>
+							<li><a href="/VisitingTePapa/Tours/Pages/GuidedTours.aspx">Guided Tours </a></li>
+							<li><a href="/AboutUs/Sponsors/Pages/Overview.aspx">Support us</a></li>
+							<li><a href="/education">Education</a></li>
+							<li><a href="/FriendsOfTePapa/Pages/Overview.aspx">Friends of Te Papa </a></li>
+							<li><a href="/VisitingTePapa/Parking/Pages/default.aspx">Parking</a></li>
+							<li><a href="/NationalServices">National Services</a></li>
+							<li><a href="/ConferencesAndFunctions">Venues</a></li>				
+						</ul>				
+					</div>
+				</div>		
+				
+				<footer>
+					<div class="columnset">
+						<div class="column">
+							<address>
+								<p><strong>Museum of New Zealand Te Papa Tongarewa</strong><br/>55 Cable Street, PO Box 467<br/>Wellington 6011, New Zealand</p>
+							</address>
+							<p><strong>Phone:</strong> <a href="tel:043817000">+64 (0)4 381 7000</a><br/><a href="/onlineforms/mediaenquiryform.aspx"><strong>Contact us</strong></a><br/><a href="/AboutUs/Media/Pages/overview.aspx"><strong>Media enquiries</strong> &ndash; Urupounamu p&#257;p&#257;ho</a></p>
+							<p><a href="/aboutus/contactus/pages/newsletters.aspx"><strong>Sign up to our newsletter</strong></a></p>
+							<h6>Join the discussion</h6>
+							<ul class="social-media">
+								<li><a class="facebook" href="http://www.facebook.com/TePapa">Facebook</a></li>
+								<li><a class="twitter" href="http://twitter.com/Te_Papa/">Twitter</a></li>
+								<li><a class="pinterest" href="http://pinterest.com/tepapa">Pinterest</a></li>
+								<li><a class="flickr" href="http://www.flickr.com/photos/te_papa/">Flickr</a></li>
+								<li><a class="youtube" href="http://www.youtube.com/tepapamuseum">YouTube</a></li>
+							</ul>
+						</div>
+						<div class="column">			
+							<p>Te Papa is open <strong>365 days a year</strong> (that&rsquo;s every day!)<br/>Hours: <strong>10am&ndash;6pm</strong> (late night 9pm Thursday)<br/><strong>Free entry</strong>. Charges apply to some short-term exhibitions and activities.</p>
+							<p><a href="/VisitingTePapa/Pages/ConditionsOfEntry.aspx"><strong>Conditions of entry</strong> &ndash; Tikanga m&#333; te uru mai</a><br/><a href="/Pages/Termsandconditions.aspx"><strong>Copyright &amp; privacy</strong> &ndash; Manat&#257; me te punanga</a><br/><a href="/pages/tepapasitemap.aspx"><strong>Site map</strong> &ndash; Mahere mahi</a></p>
+							<h6>Powered by</h6>
+							<a class="vodafone" href="/AboutUs/Sponsors/Pages/Vodafone.aspx">Vodafone</a>							
+							<h6>Te Papa is proudly supported by</h6>
+							<div class="sponsors rsDefault">
+								<div><a class="vodafone" href="/AboutUs/Sponsors/Pages/Vodafone.aspx">Vodafone</a> <a class="visa" href="/AboutUs/Sponsors/pages/Visa.aspx">Visa</a></div>
+								<div><a class="apw" href="">Absolutely Positively Wellington</a> <a class="eqc" href="/AboutUs/Sponsors/pages/earthquakecommission.aspx"><abbr title="Earthquake Commission">EQC</abbr></a></div>
+								<div><a class="ricoh" href="">Ricoh</a> <a class="gns" href="/AboutUs/Sponsors/pages/gns.aspx">GNS Science</a></div>
+								<div><a class="vero" href="">Vero</a> <a class="hp" href="">HP</a></div>
+								<div><a class="manatu-taonga" href="/AboutUs/Sponsors/Pages/MinistryforCultureandHeritage.aspx">Manatu Taonga</a> <a class="tvnz" href="">TVNZ</a></div>
+							</div>						
+						</div>
+						<div class="column">
+							<p><strong>Brochures</strong> &ndash; P&#257;nui whakam&#257;rama</p>
+							<ul class="flags">
+								<li><a class="english" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.English.pdf">English</a></li>
+								<li><a class="chinese" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Chinese.pdf">Chinese</a></li>
+								<li><a class="french" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.French.pdf">French</a></li>
+								<li><a class="japanese" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Japanese.pdf">Japanese</a></li>
+								<li><a class="german" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.German.pdf">German</a></li>
+								<li><a class="dutch" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Dutch.pdf">Dutch</a></li>
+								<li><a class="spanish" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Spanish.pdf">Spanish</a></li>
+								<li><a class="italian" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Italian.pdf">Italian</a></li>
+							</ul>				
+							<a class="nz-govt-nz" href="http://www.newzealand.govt.nz">newzealand.govt.nz</a>
+							<a class="nz-museums" href="http://www.nzmuseums.co.nz/">NZ Museums</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
+        <script src="/Style Library/TePapaResource/js/libraries.js"></script>
+
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/jquery.royalslider.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.autoplay.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.auto-height.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.thumbnails.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.bullets.js"></script>
+		<script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.video.js"></script>
+
+		<script src="/Style Library/TePapaResource/js/tepapa.js"></script>
+
+		<!-- SNIPPED -->
+
+		<!-- Analytics -->
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-2633618-2");
+			pageTracker._setDomainName(".tepapa.govt.nz");
+			pageTracker._trackPageview();
+		} catch(err) {}
+		</script>
+
+		<noscript><style>.event-list { visibility: visible; }</style></noscript>
+		
+		<script>
+		
+		    var addthis_config =
+		    {
+		      username: "tepapamuseum",
+		      pubid: "tepapamuseum",
+		      ui_offset_left: -20,
+		      services_exclude: 'facebook,twitter,email'
+		    }
+		
+		</script>
+
+		<!--<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>-->
+    </body>
+</html>

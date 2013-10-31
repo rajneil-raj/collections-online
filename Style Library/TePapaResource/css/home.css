@@ -1,0 +1,204 @@
+#menu {
+	margin-bottom: 50px;
+}
+
+body header {
+	border-bottom: none;
+}
+body #breadcrumb {
+	display: none;
+}
+body #sitemap {
+	border-top: none;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 992px) {
+	
+	#cover .white.rsContent:before {
+		height: 100px;
+	}
+	
+	body header .columnset {
+		display: block;
+	}
+
+	body .logotype {
+		display: none;
+	}
+	
+	body .logo {
+		display: block;
+		float: none;
+		margin: 20px 0 0 20px;
+		width: 65px;
+	}	
+	
+	body.white .icon.share {
+		background-position: -392px -82px;
+		
+	}
+	body.white .icon.share:hover {
+		background-position: -392px -182px;
+	}
+
+	body.white .icon.search {
+		background-position: -491px -85px;
+	}
+	body.white .icon.search:hover {
+		background-position: -491px -185px;
+	}
+	body.white .icon.menu {
+		background-position: -290px -83px;
+	}
+	body.white .icon.menu:hover {
+		background-position: -290px -183px;
+	}	
+}
+
+
+
+@media only screen and (min-width : 568px) and (max-width : 992px) {
+	#cover .overlay {
+		padding: 0;
+	}
+	#cover .title {
+		padding: 0px 20px 30px 20px;
+	}	
+	#cover .title h1 a {
+		font-size: 48px;
+		line-height: 50px;
+		margin: 20px 0 10px 0;
+		padding: 0;
+	}
+	#cover .title h2 {
+		font-size: 21px;
+		line-height: 30px;
+		margin: 0 0 0 0;
+		padding: 0;
+	}
+	#cover .title h2 a {
+		font-size: 21px;
+		line-height: 30px;
+	}
+	#cover {
+		margin-top: -170px;
+	}
+	.section-links {
+		margin: 0;
+		top: 0;
+	}
+	.section-links a {
+		font-size: 22px;
+		padding: 20px 0 20px 20px;
+	}
+	.section-links em {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	body .icon.share,
+	body .icon.search,
+	body .icon.menu {
+		top: -15px;
+	}
+	.white.rsContent:before {
+		min-height: 50px;
+	}	
+	.rsDefault .rsBullets {
+		bottom: 12px;
+	}		
+	
+}
+@media only screen and (min-width : 0px) and (max-width : 568px) {
+	.section-links {
+		margin: 0;
+		top: 0;
+	}
+	.section-links li {
+		width: 100%;
+	}
+	.section-links a {
+		font-size: 26px;
+		padding: 20px 0 20px 20px;		
+	}
+	.section-links em {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	#cover {
+		margin-top: -60px;
+	}
+	#cover .overlay {
+		padding: 0;
+	}
+	#cover .title {
+		padding: 0 20px 30px 20px;
+	}
+
+	#cover .title h1 a {
+		font-size: 26px;
+		line-height: 30px;
+		padding: 15px 0 5px 0;
+	}
+	#cover .title h2 a {
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0;
+	}
+	body .icon.share,
+	body .icon.search,
+	body .icon.menu {
+		top: 5px;
+	}	
+	#cover .white.rsContent:before {
+		min-height: 50px;
+	}
+	body header {
+		min-height: 50px;
+	}
+	body .logotype {
+		display: block;
+		margin-left: 20px;
+		padding-top: 20px;
+	}	
+	body .logo {
+		display: none;
+	}	
+	body.white #nav-top li:first-child a, body.white #panel .share-menu li:first-child a {
+		border-left: none;
+		padding-left: 20px;
+	}	
+	.rsDefault .rsBullets {
+		bottom: 6px;
+	}
+	.rsDefault .rsArrow {
+		display: none !important;
+	}
+
+}
+
+.ie7 #cover .overlay,
+.ie8 #cover .overlay {
+	background: transparent url(img/ie/overlay.png) repeat 0 0; 
+}
+
+.ie8 body {
+	min-width: 1024px;
+}
+
+.ie8 body .columnset,
+.ie8 body #cover,
+.ie8 body header,
+.ie8 body #page { 
+	width: 1024px;
+}
+.ie8 body,
+.ie8 body #page,
+.ie8 body #container {
+	height: auto;
+	overflow: auto;
+	width: auto;
+}
+
+.ie8 body.loaded #panel {
+	display: none;
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8|(gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Meta -->
+        <title>Museum of New Zealand Te Papa Tongarewa, Wellington, NZ</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="application-name" content="Te Papa"/> 
+		<meta name="msapplication-TileColor" content="#FFFFFF"/> 
+		<meta name="msapplication-TileImage" content="/Style%20Library/TePapaResource/css/img/touch/apple-touch-icon-114x114-precomposed.png"/>
+		<meta name="msapplication-tap-highlight" content="no" />
+
+        <!-- For iOS web apps. -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Te Papa">
+
+		<!-- These styles should be removed if the user is not editing -->
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/TePapaCore.css" />
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/overrides.css" />
+		<!-- -->
+		
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/royalslider.css">
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/leaflet.css">
+        <link rel="stylesheet" href="/Style%20Library/TePapaResource/css/style.css">
+        <link rel="stylesheet" href="/Style%20Library/TePapaResource/css/menu.css">
+		<link rel="stylesheet" href="/Style%20Library/TePapaResource/css/map.css">
+		
+		<!-- SNIPPED -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>if (typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='Style%20Library/TePapaResource/js/vendor/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E")); } </script>
+
+        <script src="/Style%20Library/TePapaResource/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/AC_RunActiveContent.js"></script>
+    </head>
+    <body>
+		<div id="fb-root"></div>
+
+    	<ul id="skip">
+			<li><a href="#menu" tabindex="1">Skip to navigation</a></li>
+			<li><a href="#content" tabindex="2">Skip to content</a></li>
+    	</ul>
+		<ul id="access-keys">
+		  <li><a accesskey="1" href="/" title="Link to home page.">Go to the home page</a></li>
+		  <li><a accesskey="2" href="/pages/tepapasitemap.aspx" title="Link to the site map">Go to the site map page</a></li>
+		  <li><a accesskey="3" href="/tpsearch/results.aspx" title="Link to the search.">Go to the search page</a></li>
+		  <li><a accesskey="9" href="/AboutUs/ContactUs" title="Link to contact us.">Go to the contact us page</a></li>
+		  <li><a accesskey="[" href="http://www.govt.nz" title="Government Portal www.govt.nz.">Go to the Government Portal www.govt.nz</a></li>
+		  <li><a accesskey="/" href="#" title="Top of the Page.">Go to the top of the Page</a></li>
+		</ul>
+    	<div id="page">
+	    	<div id="dismiss"></div>
+
+<nav id="panel" tabindex="-1">
+    <!-- Search menu -->
+    <div class="panel panel-search">
+        <div class="nav-scroller">
+            <ul class="active">
+                <li>
+                	<input type="text" name="search" placeholder="Search..." />
+                	<button type="submit">Search</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Share menu -->
+    <div class="panel panel-tour">
+        <div class="nav-scroller">
+            <ul id="nav-tour-top" class="previous-left" data-depth="0">
+                <li class="parent">
+                    <a rel="nav-tour-l1" class="down"></a>
+                    <a rel="nav-tour-l1">Level 1</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l2" class="down"></a>
+                    <a rel="nav-tour-l2">Level 2</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l3" class="down"></a>
+                    <a rel="nav-tour-l3">Level 3</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l4" class="down"></a>
+                    <a rel="nav-tour-l4">Level 4</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l5" class="down"></a>
+                    <a rel="nav-tour-l5">Level 5</a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-tour-l6" class="down"></a>
+                    <a rel="nav-tour-l6">Level 6</a>
+                </li>
+            </ul>
+
+            <ul id="nav-tour-l1" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 1</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l2" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 2</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l3" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 3</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l4" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 4</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l5" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 5</a>
+                </li>
+            </ul>
+            <ul id="nav-tour-l6" data-depth="1">
+               <li class="heading">
+                    <a rel="nav-tour-top" class="up"></a>
+                    <a>Level 6</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Share menu -->
+    <div class="panel panel-share">
+        <div class="nav-scroller">
+			<ul class="share-menu">
+			    <li><a>Share this</a></li>
+			    <li><a class="addthis_button_facebook facebook"><span>Facebook</span></a></li>
+			    <li><a class="addthis_button_twitter twitter"><span>Twitter</span></a></li>
+			    <li><a class="addthis_button_email email"><span>Email</span></a></li>
+			    <li><a class="addthis_button_compact more"><span>More...</span></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <!-- Map level menu -->
+    <div class="panel panel-map">
+        <div class="nav-scroller">
+            <ul class="active">
+                <li><a data-level="1">Level 1</a></li>
+                <li><a data-level="2">Level 2</a></li>
+                <li><a data-level="3">Level 3</a></li>
+                <li><a data-level="4">Level 4</a></li>
+                <li><a data-level="5">Level 5</a></li>
+                <li><a data-level="6">Level 6</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main menu -->
+    <div class="panel panel-menu panel-active">
+        <div class="nav-scroller">
+            <ul id="nav-top" data-depth="0" class="active" tabindex="-1">
+                <li><a href="/">Home<em>K&#257;inga</em></a></li>
+                <li class="parent">
+                    <a rel="nav-whats-on" class="down"></a>
+                    <a>What&rsquo;s on<em>E aha ana</em></a>
+                </li>
+                <li class="parent">
+                    <a rel="nav-plan-your-visit" class="down"></a>
+                    <a>Plan your visit<em>&#256;ta toro mai</em></a>
+                </li>
+                <li><a href="/map">Map<em>Mapi</em></a></li>
+                <li class="current"><a>Education<em>Ng&#257; akoranga</em></a></li>
+                <li><a>Research<em>Ng&#257; rangahau</em></a></li>
+                <li><a>Store<em>Wharehoko</em></a></li>
+                <li><a>Venues<em>W&#257;hi</em></a></li>  
+            </ul>
+
+            <ul id="nav-whats-on" data-depth="1">
+                <li class="heading">
+                    <a rel="nav-top" class="up"></a>
+                    <a>What's on</a>
+                </li>
+                <li><a href="/event-list">Events</a></li>
+                <li><a href="#">Current exhibitions</a></li>
+                <li><a href="#">Future exhibitions</a></li>
+                <li><a href="#">Touring exhibitions</a></li>
+                <li><a href="#">Past exhibitions</a></li>
+                <li><a href="#">Past events</a></li>
+                <li><a href="#">Podcasts</a></li>
+            </ul>
+
+            <ul id="nav-plan-your-visit" data-depth="1">
+                <li class="heading">
+                    <a rel="nav-top" class="up"></a>
+                    <a>Plan your visit</a>
+                </li>
+                <li><a href="#">Getting here</a></li>
+                <li class="parent">
+                    <a rel="nav-parking" class="down"></a>
+                    <a href="#">Parking</a>
+                </li>
+                <li><a href="#">First-time visitors</a></li>
+                <li><a href="#">Guided tours</a></li>
+                <li><a href="#">Services and facilities</a></li>
+                <li><a href="#">Conditions of entry</a></li>
+                <li><a href="#">Āta toro mai</a></li>
+            </ul>
+
+            <ul id="nav-parking" data-depth="2">
+                <li class="heading">
+                    <a rel="nav-plan-your-visit" class="up"></a>
+                    <a>Parking</a>
+                </li>
+                <li><a href="#">Weekday parking specials</a></li>
+                <li><a href="#">Parking terms and conditions</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	    	<div id="container">
+		    	<header>
+		    		<div class="columnset">
+			    		<a class="logo" href="/">Te Papa<small>Our Place</small></a>
+			    		<a class="logotype" href="/"><strong>Museum of New Zealand</strong><em>Te Papa Tongarewa</em></a>
+			    		<div id="search">
+			    			<input id="search-query" type="text" placeholder="Search" value="" tabindex="3" />
+			    			<button id="search-submit" type="submit">Search</button>
+			    		</div>
+			    		<a class="icon share">Share</a>
+			    		<a class="icon search">Search</a>
+			    		<a class="icon menu">Menu</a>
+			    		<nav id="menu">
+				    		<ul>
+				    			<li><a tabindex="4" class="selected" href="/home">Home <em>K&#257;inga</em></a></li>
+				    			<li><a tabindex="5" href="/event-list">What&rsquo;s on <em>E aha ana</em></a></li>
+				    			<li><a tabindex="6" href="/styles">Plan your visit <em>&#256;ta toro mai</em></a></li>
+				    			<li><a tabindex="7" href="/map">Map <em>Mapi</em></a></li>
+				    			<li><a tabindex="8" href="/event-detail">Education <em>Ng&#257; akoranga</em></a></li>
+				    			<li><a tabindex="9" href="/exhibition-detail">Research <em>Ng&#257; rangahau</em></a></li>
+				    			<li><a tabindex="10" href="/styles">Store <em>Wharehoko</em></a></li>
+				    			<li><a tabindex="11" href="/content-generic">Venues <em>W&#257;hi</em></a></li>    			
+				    		</ul>
+			    		</nav>
+			    		<nav id="breadcrumb">
+			    			<div class="scroll">
+				    			<ul>
+				    				<li><a href="/">Home</a></li>
+				    				<li><a href="">Education</a></li>
+				    				<li><a>Professional development and teacher events</a></li>
+				    			</ul>
+				    		</div>
+			    		</nav>
+						<ul class="share-menu">
+						    <li><a class="addthis_button_facebook facebook"><span>Facebook</span></a></li>
+						    <li><a class="addthis_button_twitter twitter"><span>Twitter</span></a></li>
+						    <li><a class="addthis_button_email email"><span>Email</span></a></li>
+						    <li><a class="addthis_button_compact more"><span>More...</span></a></li>
+						</ul>
+		    		</div>
+		        </header>
+		        
+		        <div id="layout">
+		        	<div class="page-wrapper page-current">
+		        <div class="columnset">
+	<aside>
+	</aside>
+	<div id="content">
+		<article>
+			<h1><span>Media - Enquiries</span></h1>
+			<div class="form_maindiv">
+				<div id="ctl00_PlaceHolderMain_ValSummary" style="color:Red;display:none;">
+				</div>
+			</div>
+			<fieldset class="form_fieldset">
+				<legend class="form_legend">Enquiry</legend>
+				<div class="form_info_div">Fill out your enquiry here</div>
+                	<div class="form_maindiv">
+						<div class="InputBox" style="">
+							<label for="ctl00_PlaceHolderMain_FirmBox_textBox">Firm</label>
+							<br />
+							<input name="ctl00$PlaceHolderMain$FirmBox_textBox" type="text" id="ctl00_PlaceHolderMain_FirmBox_textBox" class="DefaultTextBox" style="width:340px;" />
+						</div>
+					</div>
+					<div class="form_maindiv">
+						<div class="InputBox" style="">
+							<label for="ctl00_PlaceHolderMain_EnquiryBox_textBox">Enquiry</label>
+							<br />
+							<textarea name="ctl00$PlaceHolderMain$EnquiryBox_textBox" rows="7" cols="20" id="ctl00_PlaceHolderMain_EnquiryBox_textBox" class="DefaultTextBoxLarge" style="width:340px;"></textarea>
+						</div>
+					</div>
+    		</fieldset>
+			<br />
+			<br />
+			<fieldset class="form_fieldset">
+				<legend class="form_legend">Contact information</legend>
+        		<div class="form_info_div">We need to know your contact details so that we can get back to you.</div>
+        		<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_NameBox_textBox">Name</label>
+						<br />
+						<input name="ctl00$PlaceHolderMain$NameBox_textBox" type="text" id="ctl00_PlaceHolderMain_NameBox_textBox" class="DefaultTextBox" style="width:340px;" />
+					</div>
+				</div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_EmailBox_textBox">Email</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;<br />
+						<input name="ctl00$PlaceHolderMain$EmailBox_textBox" type="text" id="ctl00_PlaceHolderMain_EmailBox_textBox" class="DefaultTextBox" style="width:340px;" />
+					</div>
+				</div>          
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_HomeNumberBox_textBox">Home phone number</label>
+						<br />
+						<input name="ctl00$PlaceHolderMain$HomeNumberBox_textBox" type="text" id="ctl00_PlaceHolderMain_HomeNumberBox_textBox" class="DefaultTextBox" style="width:185px;" />
+					</div>
+				</div>        
+				<div class="cleararea"></div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_AddressBox_textBox">Postal address</label>
+						<br />
+						<textarea name="ctl00$PlaceHolderMain$AddressBox_textBox" rows="4" cols="20" id="ctl00_PlaceHolderMain_AddressBox_textBox" class="DefaultTextBoxLarge" style="width:340px;"></textarea>
+					</div>
+				</div>           
+			</fieldset>
+			<br />
+			<br />
+			<input type="submit" name="ctl00$PlaceHolderMain$ButtonSubmit" value="Submit enquiry" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$ButtonSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_ButtonSubmit" />
+			<br />
+			<br />
+			<br />
+			
+			<h1><span>Media - Enquiries</span></h1>
+			<div class="form_maindiv">
+        		<div id="ctl00_PlaceHolderMain_ValSummary" style="color:Red;">Your enquiry was unable to be submitted. Please correct the errors listed below and click submit again.
+        			<br />
+        			<br />
+        			<ul>
+        				<li>You must provide an email address</li>
+        			</ul>
+        		</div>
+			</div>
+			<fieldset class="form_fieldset">
+        		<legend class="form_legend">Enquiry</legend>
+                <div class="form_info_div">Fill out your enquiry here</div>
+                <div class="form_maindiv">
+                	<div class="InputBox" style="">
+                		<label for="ctl00_PlaceHolderMain_FirmBox_textBox">Firm</label>
+                		<br />
+						<input name="ctl00$PlaceHolderMain$FirmBox_textBox" type="text" id="ctl00_PlaceHolderMain_FirmBox_textBox" class="DefaultTextBox" style="width:340px;" />
+					</div>
+				</div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_EnquiryBox_textBox">Enquiry</label>
+						<br />
+						<textarea name="ctl00$PlaceHolderMain$EnquiryBox_textBox" rows="7" cols="20" id="ctl00_PlaceHolderMain_EnquiryBox_textBox" class="DefaultTextBoxLarge" style="width:340px;"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<br />
+			<br />
+			<fieldset class="form_fieldset">
+				<legend class="form_legend">Contact information</legend>
+				<div class="form_info_div">
+					We need to know your contact details so that we can get back to you.
+				</div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_NameBox_textBox">Name</label>
+						<br />
+						<input name="ctl00$PlaceHolderMain$NameBox_textBox" type="text" id="ctl00_PlaceHolderMain_NameBox_textBox" class="DefaultTextBox" style="width:340px;" />
+					</div>
+				</div>
+				<div class="form_maindiv">
+					<div class="errorBox" style="">
+						<span style="color: red;">You must provide an email address</span>
+						<br />
+						<label for="ctl00_PlaceHolderMain_EmailBox_textBox">Email</label>&nbsp;<strong style="color: red;">*</strong>&nbsp;
+						<br />
+						<input name="ctl00$PlaceHolderMain$EmailBox_textBox" type="text" id="ctl00_PlaceHolderMain_EmailBox_textBox" class="DefaultTextBox" style="width:340px;" />
+					</div>
+				</div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_HomeNumberBox_textBox">Home phone number</label><br />
+						<input name="ctl00$PlaceHolderMain$HomeNumberBox_textBox" type="text" id="ctl00_PlaceHolderMain_HomeNumberBox_textBox" class="DefaultTextBox" style="width:185px;" />
+					</div>
+				</div>
+				<div class="cleararea"></div>
+				<div class="form_maindiv">
+					<div class="InputBox" style="">
+						<label for="ctl00_PlaceHolderMain_AddressBox_textBox">Postal address</label>
+						<br />
+						<textarea name="ctl00$PlaceHolderMain$AddressBox_textBox" rows="4" cols="20" id="ctl00_PlaceHolderMain_AddressBox_textBox" class="DefaultTextBoxLarge" style="width:340px;"></textarea>
+					</div>
+				</div>                   
+			</fieldset>
+			<br />
+			<br />
+			<input type="submit" name="ctl00$PlaceHolderMain$ButtonSubmit" value="Submit enquiry" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$ButtonSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_ButtonSubmit" />
+			<br />
+			<br />
+			<br />		
+		</article>
+	</div>
+</div>
+		        	</div>
+		       	</div>
+
+		        <div id="sitemap">
+					<div class="columnset">
+						<ul>
+							<li><a href="/whatson">What&rsquo;s on</a></li>
+							<li><a href="/VisitingTePapa">Plan your visit</a></li>
+							<li><a href="/map/">Map</a></li>
+							<li><a href="http://collections.tepapa.govt.nz/">Collections</a></li>
+							<li><a href="/WhatsOn/exhibitions/Pages/Allexhibitions.aspx?exhibitiontime=Current%20exhibitions&exhibitiontype=All">Exhibitions </a></li>
+							<li><a href="/VisitingTePapa/ServicesAndFacilities/Pages/FoodAndDrink.aspx">Caf&eacute;</a></li>
+							<li><a href="/AboutUs">About Te Papa</a></li>
+							<li><a href="/TePapaPress">Blog</a></li>
+							<li><a href="/WhatsOn/allevents/Pages/EventsCalendar.aspx?eventtype=All">Events </a></li>
+							<li><a href="http://www.tepapastore.co.nz/">Store</a></li>
+							<li><a href="/AboutUs/JobsAtTePapa">Jobs</a></li>
+							<li><a href="/images/">Picture Library</a></li>
+							<li><a href="/WhatsOn/Kahu-KidsAtTePapa/Whatson/Pages/Kids.aspx">Kids </a></li>
+							<li><a href="/VisitingTePapa/Tours/Pages/GuidedTours.aspx">Guided Tours </a></li>
+							<li><a href="/AboutUs/Sponsors/Pages/Overview.aspx">Support us</a></li>
+							<li><a href="/education">Education</a></li>
+							<li><a href="/FriendsOfTePapa/Pages/Overview.aspx">Friends of Te Papa </a></li>
+							<li><a href="/VisitingTePapa/Parking/Pages/default.aspx">Parking</a></li>
+							<li><a href="/NationalServices">National Services</a></li>
+							<li><a href="/ConferencesAndFunctions">Venues</a></li>				
+						</ul>				
+					</div>
+				</div>		
+				
+				<footer>
+					<div class="columnset">
+						<div class="column">
+							<address>
+								<p><strong>Museum of New Zealand Te Papa Tongarewa</strong><br/>55 Cable Street, PO Box 467<br/>Wellington 6011, New Zealand</p>
+							</address>
+							<p><strong>Phone:</strong> <a href="tel:043817000">+64 (0)4 381 7000</a><br/><a href="/onlineforms/mediaenquiryform.aspx"><strong>Contact us</strong></a><br/><a href="/AboutUs/Media/Pages/overview.aspx"><strong>Media enquiries</strong> &ndash; Urupounamu p&#257;p&#257;ho</a></p>
+							<p><a href="/aboutus/contactus/pages/newsletters.aspx"><strong>Sign up to our newsletter</strong></a></p>
+							<h6>Join the discussion</h6>
+							<ul class="social-media">
+								<li><a class="facebook" href="http://www.facebook.com/TePapa">Facebook</a></li>
+								<li><a class="twitter" href="http://twitter.com/Te_Papa/">Twitter</a></li>
+								<li><a class="pinterest" href="http://pinterest.com/tepapa">Pinterest</a></li>
+								<li><a class="flickr" href="http://www.flickr.com/photos/te_papa/">Flickr</a></li>
+								<li><a class="youtube" href="http://www.youtube.com/tepapamuseum">YouTube</a></li>
+							</ul>
+						</div>
+						<div class="column">			
+							<p>Te Papa is open <strong>365 days a year</strong> (that&rsquo;s every day!)<br/>Hours: <strong>10am&ndash;6pm</strong> (late night 9pm Thursday)<br/><strong>Free entry</strong>. Charges apply to some short-term exhibitions and activities.</p>
+							<p><a href="/VisitingTePapa/Pages/ConditionsOfEntry.aspx"><strong>Conditions of entry</strong> &ndash; Tikanga m&#333; te uru mai</a><br/><a href="/Pages/Termsandconditions.aspx"><strong>Copyright &amp; privacy</strong> &ndash; Manat&#257; me te punanga</a><br/><a href="/pages/tepapasitemap.aspx"><strong>Site map</strong> &ndash; Mahere mahi</a></p>
+							<h6>Powered by</h6>
+							<a class="vodafone" href="/AboutUs/Sponsors/Pages/Vodafone.aspx">Vodafone</a>							
+							<h6>Te Papa is proudly supported by</h6>
+							<div class="sponsors rsDefault">
+								<div><a class="vodafone" href="/AboutUs/Sponsors/Pages/Vodafone.aspx">Vodafone</a> <a class="visa" href="/AboutUs/Sponsors/pages/Visa.aspx">Visa</a></div>
+								<div><a class="apw" href="">Absolutely Positively Wellington</a> <a class="eqc" href="/AboutUs/Sponsors/pages/earthquakecommission.aspx"><abbr title="Earthquake Commission">EQC</abbr></a></div>
+								<div><a class="ricoh" href="">Ricoh</a> <a class="gns" href="/AboutUs/Sponsors/pages/gns.aspx">GNS Science</a></div>
+								<div><a class="vero" href="">Vero</a> <a class="hp" href="">HP</a></div>
+								<div><a class="manatu-taonga" href="/AboutUs/Sponsors/Pages/MinistryforCultureandHeritage.aspx">Manatu Taonga</a> <a class="tvnz" href="">TVNZ</a></div>
+							</div>						
+						</div>
+						<div class="column">
+							<p><strong>Brochures</strong> &ndash; P&#257;nui whakam&#257;rama</p>
+							<ul class="flags">
+								<li><a class="english" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.English.pdf">English</a></li>
+								<li><a class="chinese" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Chinese.pdf">Chinese</a></li>
+								<li><a class="french" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.French.pdf">French</a></li>
+								<li><a class="japanese" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Japanese.pdf">Japanese</a></li>
+								<li><a class="german" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.German.pdf">German</a></li>
+								<li><a class="dutch" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Dutch.pdf">Dutch</a></li>
+								<li><a class="spanish" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Spanish.pdf">Spanish</a></li>
+								<li><a class="italian" href="/SiteCollectionDocuments/PlanYourVisit/TePapa.Generic.Online.Brochure.Italian.pdf">Italian</a></li>
+							</ul>				
+							<a class="nz-govt-nz" href="http://www.newzealand.govt.nz">newzealand.govt.nz</a>
+							<a class="nz-museums" href="http://www.nzmuseums.co.nz/">NZ Museums</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
+        <script src="/Style Library/TePapaResource/js/libraries.js"></script>
+
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/jquery.royalslider.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.autoplay.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.auto-height.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.thumbnails.js"></script>
+        <script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.bullets.js"></script>
+		<script src="/Style%20Library/TePapaResource/js/vendor/royalslider/modules/jquery.rs.video.js"></script>
+
+		<script src="/Style Library/TePapaResource/js/tepapa.js"></script>
+
+		<!-- SNIPPED -->
+
+		<!-- Analytics -->
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-2633618-2");
+			pageTracker._setDomainName(".tepapa.govt.nz");
+			pageTracker._trackPageview();
+		} catch(err) {}
+		</script>
+
+		<noscript><style>.event-list { visibility: visible; }</style></noscript>
+		
+		<script>
+		
+		    var addthis_config =
+		    {
+		      username: "tepapamuseum",
+		      pubid: "tepapamuseum",
+		      ui_offset_left: -20,
+		      services_exclude: 'facebook,twitter,email'
+		    }
+		
+		</script>
+
+		<!--<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>-->
+    </body>
+</html>

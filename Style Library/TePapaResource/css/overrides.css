@@ -1,0 +1,24 @@
+﻿body .ms-MenuUIPopupBody,
+body .ms-siteactionsmenu,
+body .ms-consolestatusframe  {
+	line-height:15px;
+	font-size:12px!important
+}
+.ms-MenuUIPopupBody label {
+	font-size:11px!important;
+}
+.ms-SPLink	{
+	float:right
+}
+
+
+.ms-formfieldcontainer {width:100%!important}
+
+.ms-SPLink img, 
+.ms-siteactionsmenu img {display:inline; margin:0}
+
+.clear {clear:both}
+
+/*.overview-list .detail em p {display:none} -- for Section overview page image link rollups */
+-- for Section overview page image link rollups */
+.overview-list .detail em	{color:#fff} /*-- when the content isn't a link--*/
