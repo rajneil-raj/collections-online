@@ -98,7 +98,7 @@ function setupSliders() {
         var tabs = slider.find('.rsNav');
 
         tabs.find('.rsThumb').each(function() {
-            $(this).html('<a>' + $(this).children('h3').text() + '</a>');
+            $(this).html('<a>' + $(this).children('h3').html() + '</a>');
         });
 
         tabNav.append(tabs);
@@ -1008,9 +1008,7 @@ function pageLoad(url) {
 
     Map.init();
     Tour.init();
-    Viewer.init();
-    Collections.init();
-    
+
     // Tabs
     setupSliders();
 
@@ -1389,6 +1387,8 @@ function pageLoad(url) {
 
     function onModeChange() {     
         TePapa.Scrollers.check();
+
+        w.trigger('displayModeChange');
     }
 
     /*
