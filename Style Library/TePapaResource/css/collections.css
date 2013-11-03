@@ -1855,7 +1855,7 @@ ul.search-result-items > li {
 	padding-right: 10px;
 }
 
-.no-image {
+.object-no-image {
 	background: url(img/collections/viewer-bg.gif);
 	border-radius: 3px;
 	margin: 0px 0px 20px 0px;
@@ -1865,14 +1865,14 @@ ul.search-result-items > li {
 	width: 100%;
 }
 
-.no-image p {
+.object-no-image p {
 	display: table-cell;
 	width: 100%;
 	vertical-align: middle;
 	padding-right: 45px;
 }
 
-.no-image .icon {
+.object-no-image .icon {
 	background: url(img/collections/collections.png) no-repeat -194px -97px;
 	width: 60px;
 	height: 90px;
